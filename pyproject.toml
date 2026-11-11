@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fastaio"
+version = "0.2.0"
+description = "Small FASTA and multiple-sequence-alignment utilities (read/write, consensus, path helpers)"
+readme = "README.md"
+requires-python = ">=3.8"
+authors = [{ name = "Niloofar Haghjoo" }]
+dependencies = []
+
+[project.optional-dependencies]
+pandas = ["pandas"]
+test = ["pytest", "pandas"]
+
+[project.urls]
+Source = "https://github.com/nrhaghjoo/fastaio"
+
+[tool.setuptools]
+packages = ["fastaio"]
